@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>W.E.S Electrical Ltd</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container">
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> 0141 840 5236</span>
+        <span><i class="fas fa-envelope"></i> iain@weselectrical.co.uk</span>
+        <span><i class="fas fa-clock"></i> Mon - Fri 08.00 - 18.00</span>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+<header class="navbar">
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo.svg" alt="W.E.S Electrical Ltd">
+    </div>
+    <nav class="nav-links" id="mobileMenu">
+      <span class="close-menu" id="closeMenu">&times;</span>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Our Services</a>
+      <a href="#">Gallery</a>
+      <a href="#">Testimonials</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <a href="#" class="btn-primary">Contact Us</a>
+  </div>
+</header>
+
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Improving Safety<br>Standards</h1>
+      <p>We ensure every property meets the highest electrical safety requirements, reducing risks and protecting both people and assets. Our certified inspections, testing, and compliance services give you peace of mind that your home or business is always safe and up to standard.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">Contact Us</a>
+        <span class="phone-number">0141 840 5236</span>
+      </div>
+    </div>
+  </section>
+
+ <script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenu = document.getElementById('closeMenu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.add('active');
+  });
+
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+  });
+</script>
+
+</body>
+</html>
